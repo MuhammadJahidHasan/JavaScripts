@@ -56,3 +56,13 @@ const sum = array.reduce((preValue, currValue, index, arr)=>{
 },0);
 
 console.log(`sum = ${sum}`);
+
+const spread = [...array, 4,5,6];
+
+const restOperator = function(a, ...params){
+
+    console.log(params);
+
+};
+
+restOperator(1,5,9,6,9,4,7);
