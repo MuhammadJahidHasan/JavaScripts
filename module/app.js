@@ -1,4 +1,4 @@
-import Cat from './Cat'
+import Cat from './Cat.js'
 
 
 const c1 = new Cat('miki');
