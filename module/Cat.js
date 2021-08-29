@@ -1,5 +1,5 @@
 
-//import Animal from './Animal'
+import Animal from './Animal.js'
 class Cat extends Animal{
 
     constructor(name){
