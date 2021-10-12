@@ -1,5 +1,5 @@
 
-const createBike = function(name, brand){
+const CreateBike = function(name, brand){
 
         this.name = name
         this.brand = brand,
@@ -12,12 +12,12 @@ const createBike = function(name, brand){
         }
 };
 
-const b1 = new createBike('Hornet', 'Honda');
+const b1 = new CreateBike('Hornet', 'Honda');
 
 b1.break();
 console.log(b1.name);
 
-const b2 = new createBike('Saluto', 'Yamaha');
+const b2 = new CreateBike('Saluto', 'Yamaha');
 b2.break();
 console.log(b2.constructor);
 
