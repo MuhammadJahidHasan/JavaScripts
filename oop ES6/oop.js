@@ -17,9 +17,9 @@ class Animal {
 
 class Cat extends Animal{
 
-      constructor(name){
-          super();
-           this.name = name;
+      constructor(name, color){
+          super(name);
+           this.color = color;
 
       }
 
@@ -37,7 +37,7 @@ class Cat extends Animal{
 
 }
 
-const c1 = new Cat('miki');
+const c1 = new Cat('miki', 'white');
 
 c1.canWalk();
 c1.canEat();
