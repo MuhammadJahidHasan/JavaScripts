@@ -31,7 +31,17 @@ const printAge = function(st){
     console.log(`${this.Age} is ${st}`);
 
 };
-let st = 'Above 18'
-printAge.call(Sakib,st);
-printAge.call(Tarek,st);
+let str = 'Above 18'
+//call
+printAge.call(Sakib,str);
+printAge.call(Tarek,str);
+
+//apply
+printAge.apply(Tarek,[str, 'abc']);
+
+//bind
+const fn = printAge.bind(Sakib, str);
+
+fn();
+
 
