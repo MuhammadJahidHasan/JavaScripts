@@ -58,3 +58,29 @@ const addToCalender = (meetingDetails)=>{
     }
 
     myMeeting();
+
+
+// asyncawait
+
+function resolveAfter2Seconds() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve('resolved');
+      }, 2000);
+    });
+  }
+
+  const sync = function() {
+      console.log('hello world');
+  }
+  
+  async function asyncCall() {
+    //console.log('calling');
+    const result = await resolveAfter2Seconds();
+    console.log(result);
+    console.log('hello BD');
+    // expected output: "resolved"
+  }
+  
+asyncCall();
+sync();
